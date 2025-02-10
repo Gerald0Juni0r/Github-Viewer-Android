@@ -44,4 +44,6 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.gson)
+    implementation (libs.logging.interceptor) // Para debug
+    implementation (libs.picasso) // Para carregar imagens
 }
