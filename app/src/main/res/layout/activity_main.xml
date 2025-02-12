@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Campo de entrada para o nome de usuário -->
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o usuário do GitHub"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:textSize="16sp"/>
+
+    <!-- Botão para buscar o usuário -->
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textSize="18sp"/>
+</LinearLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,6 +46,7 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/title_template"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -24,28 +59,32 @@
         android:textColor="@color/material_dynamic_tertiary70"
         android:textSize="20sp"
         tools:ignore="HardcodedText" />
+
     <EditText
+        android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:text="Digite o nome do usuário"
-        android:textColor="@color/material_dynamic_tertiary70"
+        android:layout_gravity="center"
+        android:autofillHints="username"
 
-
+        android:hint="Nome do usuário"
+        android:textColorHint="@color/material_dynamic_tertiary70"
+        android:textSize="20sp"
 
         android:layout_marginTop="200dp"
         android:layout_marginHorizontal="50dp"
-        android:layout_gravity="center"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,LabelFor,TextFields,VisualLintTextFieldSize" />
+
     <Button
         android:id="@+id/btnBuscar"
-        android:layout_width="220dp"
-        android:layout_height="60dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
 
         android:text="Buscar"
-        android:textColor="@color/material_dynamic_tertiary70"
+        android:textColor="@color/white"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,5 +93,5 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
 </LinearLayout>
-
+-->
 
