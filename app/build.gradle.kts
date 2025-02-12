@@ -46,4 +46,16 @@ dependencies {
     implementation(libs.gson)
     implementation (libs.logging.interceptor) // Para debug
     implementation (libs.picasso) // Para carregar imagens
+
+    // OkHttp (for logging)
+    implementation(libs.logging.interceptor.v493)
+
+
+    // Glide (for image loading)
+    implementation(libs.github.glide)
+    annotationProcessor(libs.compiler)
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation(libs.kotlinx.coroutines.core)
 }
