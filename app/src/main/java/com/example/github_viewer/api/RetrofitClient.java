@@ -10,7 +10,7 @@ import java.io.IOException;
 public class RetrofitClient {
     private static Retrofit retrofit = null;
     private static final String BASE_URL = "https://api.github.com/";
-    private static final String GITHUB_TOKEN = "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"; // Substitua pelo seu token
+    private static final String GITHUB_TOKEN = "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"; // Substitua pelo seu token
 
     public static Retrofit getClient() {
         if (retrofit == null) {
