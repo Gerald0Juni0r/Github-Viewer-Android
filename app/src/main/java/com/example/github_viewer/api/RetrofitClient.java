@@ -10,7 +10,7 @@ import java.io.IOException;
 public class RetrofitClient {
     private static Retrofit retrofit = null;
     private static final String BASE_URL = "https://api.github.com/";
-    private static final String GITHUB_TOKEN = "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"; // Substitua pelo seu token
+    private static final String GITHUB_TOKEN = "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"; // Substitua pelo seu token
 
     public static Retrofit getClient() {
         if (retrofit == null) {
@@ -20,7 +20,7 @@ public class RetrofitClient {
                         public okhttp3.Response intercept(Chain chain) throws IOException {
                             Request original = chain.request();
                             Request.Builder requestBuilder = original.newBuilder()
-                                    .header("Authorization", "Bearer " + GITHUB_TOKEN)
+                                    .header("Authorization", "token " + GITHUB_TOKEN)
                                     .method(original.method(), original.body());
                             Request request = requestBuilder.build();
                             return chain.proceed(request);
