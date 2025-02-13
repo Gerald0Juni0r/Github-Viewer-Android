@@ -39,25 +39,6 @@
             android:textSize="18sp"
             android:layout_marginTop="8dp"/>
 
-        <!-- Repositório mais recente
-        <TextView
-            android:id="@+id/txtRepoName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Repositório mais recente:"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginTop="12dp"/>
-
-        <TextView
-            android:id="@+id/txtRepoLanguage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Linguagem: -"
-            android:textSize="16sp"
-            android:layout_marginBottom="16dp"/>
-        -->
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewRepos"
             android:layout_width="match_parent"
