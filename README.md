@@ -13,7 +13,7 @@ O GitHub Viewer é um aplicativo desenvolvido em Java + Retrofit que permite pes
 ## 📸 Capturas de Tela
 | Tela Inicial | Perfil do Usuário |
 |-------------|------------------|
-| ![Tela Inicial](./screenshots/tela_inicial.png) | ![Perfil do Usuário](./screenshots/perfil_usuario.png) |
+| ![Tela Inicial](./screenshots/tela_inicial.jpg) | ![Perfil do Usuário](./screenshots/perfil_usuario.jpg) |
 
 ## 📌 Funcionalidades
 - 🔍 Busca de usuários do GitHub pelo nome de usuário.
