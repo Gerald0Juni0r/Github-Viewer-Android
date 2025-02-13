@@ -1,5 +1,6 @@
 package com.example.github_viewer;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,11 +36,29 @@ public class MainActivity extends AppCompatActivity {
         btnBuscar.setOnClickListener(v -> buscarUsuario());
     }
 
+    private void showErrorDialog(String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Erro")
+                .setMessage(message)
+                .setPositiveButton("OK", (dialog, which) -> {
+                    // Voltar para a tela inicial (MainActivity)
+                    Intent intent = new Intent(this, MainActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    finish();
+                })
+                .setCancelable(false); // Impede que o usuário feche sem clicar em "OK"
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+
     private void buscarUsuario() {
         String username = edtUsuario.getText().toString().trim();
 
         if (username.isEmpty()) {
-            Toast.makeText(this, "Por favor, insira um nome de usuário", Toast.LENGTH_SHORT).show();
+            showErrorDialog("Por favor, insira um nome de usuário"); // Exibindo mensagem de erro
             return;
         }
 
@@ -57,13 +76,13 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("public_repos", user.getPublic_repos());
                     startActivity(intent);
                 } else {
-                    Toast.makeText(MainActivity.this, "Usuário não encontrado. Insira outro nome", Toast.LENGTH_LONG).show();
+                    showErrorDialog("Usuário não encontrado. Insira outro nome"); // Exibindo mensagem de erro
                 }
             }
 
             @Override
             public void onFailure(Call<User> call, Throwable t) {
-                Toast.makeText(MainActivity.this, "Ocorreu um erro de rede. Verifique sua conexão.", Toast.LENGTH_LONG).show();
+                showErrorDialog("Ocorreu um erro de rede. Verifique sua conexão."); // Exibindo mensagem de erro
             }
         });
     }
