@@ -12,10 +12,10 @@
         android:padding="24dp">
 
         <!-- Botão de voltar -->
-        <ImageView
+        <ImageButton
             android:id="@+id/btnVoltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_margin="16dp"
@@ -68,77 +68,3 @@
 
     <!-- Botão de voltar -->
 </LinearLayout>
-
-
-    <!--
-    <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/material_dynamic_tertiary10">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="190dp"
-            android:background="@color/material_dynamic_tertiary20">
-
-            <ImageView
-                android:id="@+id/imgProfile"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="40dp"
-                android:scaleType="centerCrop"
-                android:src="@tools:sample/avatars"/>
-
-            <TextView
-                android:id="@+id/title_template"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/imgProfile"
-                android:paddingVertical="10dp"
-                android:text="Username"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"/>
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:background="@color/material_dynamic_tertiary10">
-
-            <TextView
-                android:id="@+id/txtReposCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Public Repositories: 10"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:layout_marginBottom="10dp"/>
-
-            <TextView
-                android:id="@+id/txtRepoName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nome do Repositório"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@android:color/black"/>
-
-            <TextView
-                android:id="@+id/txtRepoLanguage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Linguagem"
-                android:textSize="14sp"
-                android:textColor="@android:color/darker_gray"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-    -->

@@ -23,9 +23,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ProfileActivity extends AppCompatActivity {
-    private ImageView imgProfile, btnVoltar;
+    private ImageView imgProfile;
     private TextView txtUsername, txtReposCount;
-    // private ImageButton btnVoltar;
+
+    private ImageButton btnVoltar;
     private RecyclerView recyclerViewRepos;
     private RepositoryAdapter adapter;
     private GitHubAPI gitHubAPI;
