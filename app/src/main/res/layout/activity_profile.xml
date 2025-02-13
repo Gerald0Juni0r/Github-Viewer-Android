@@ -35,11 +35,11 @@
             android:id="@+id/txtReposCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Public Repositories: 0"
+            android:text="Repositórios públicos: 0"
             android:textSize="18sp"
             android:layout_marginTop="8dp"/>
 
-        <!-- Repositório mais recente -->
+        <!-- Repositório mais recente
         <TextView
             android:id="@+id/txtRepoName"
             android:layout_width="wrap_content"
@@ -56,6 +56,15 @@
             android:text="Linguagem: -"
             android:textSize="16sp"
             android:layout_marginBottom="16dp"/>
+        -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRepos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbars="vertical"/>
+
 
         <!-- Botão de voltar -->
         <Button
