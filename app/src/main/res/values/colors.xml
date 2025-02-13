@@ -2,7 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="my_dark_text">#212121</color> <!-- Dark gray -->
-    <color name="my_light_background">#EEEEEE</color> <!-- Light gray -->
-    <color name="my_medium_background">#D0D0D0</color> <!-- Medium gray -->
+
+    <color name="material_dynamic_tertiary10">#2A122C</color>
+    <color name="material_dynamic_tertiary50">#8C6D8C</color>
+    <color name="material_dynamic_tertiary70">#C3A0C1</color>
+    <color name="material_dynamic_tertiary80">#E0BBDD</color>
 </resources>

@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nome do Repositório"
+        android:textColor="@color/material_dynamic_tertiary50"
         android:textSize="16sp"
         android:textStyle="bold"/>
 
@@ -17,7 +18,8 @@
         android:id="@+id/txtRepoLanguage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/material_dynamic_tertiary40"
         android:text="Linguagem"
         android:textSize="14sp"
-        android:textColor="#666666"/>
+        />
 </LinearLayout>

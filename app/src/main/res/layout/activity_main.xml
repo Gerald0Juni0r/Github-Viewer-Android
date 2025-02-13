@@ -5,29 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/material_dynamic_tertiary10"
-    android:gravity="center"
     android:orientation="vertical"
-    android:padding="24dp"
     tools:context=".MainActivity">
 
     <!-- Campo de entrada para o nome de usuário -->
+
+    <!-- Botão para buscar o usuário -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_tertiary80"
+        android:padding="30dp">
+
+        <!-- Foto do usuário -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="25dp"
+            android:text="Buscador de perfil do GitHub"
+            android:textAlignment="center"
+            android:textColor="@color/material_dynamic_tertiary10"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
     <EditText
         android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="250dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="@color/material_dynamic_tertiary70"
         android:hint="Digite o usuário do GitHub"
         android:inputType="text"
         android:padding="12dp"
-        android:background="@android:drawable/editbox_background"
-        android:textSize="16sp"/>
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
-    <!-- Botão para buscar o usuário -->
     <Button
         android:id="@+id/btnBuscar"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Buscar"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
+        android:backgroundTint="@color/material_dynamic_tertiary50"
+        android:textColor="@color/material_dynamic_tertiary10"
         android:padding="12dp"
-        android:textSize="18sp"/>
+        android:text="Buscar"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
 </LinearLayout>

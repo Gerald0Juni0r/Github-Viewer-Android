@@ -23,3 +23,4 @@ public interface GitHubAPI {
             @Path("repo") String repo
     );
 }
+
