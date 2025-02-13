@@ -1,62 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:padding="24dp">
+
+        <!-- Botão de voltar -->
+        <ImageView
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_arrow_back" />
 
         <!-- Foto do usuário -->
         <ImageView
             android:id="@+id/imgProfile"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginBottom="16dp"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"/>
-
-        <!-- Nome do usuário -->
-        <TextView
-            android:id="@+id/title_template"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nome do Usuário"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textAlignment="center"/>
-
-        <!-- Número de repositórios -->
-        <TextView
-            android:id="@+id/txtReposCount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Repositórios públicos: 0"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewRepos"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:scrollbars="vertical"/>
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher_background" />
 
 
-        <!-- Botão de voltar -->
-        <Button
-            android:id="@+id/btnVoltar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Voltar"
-            android:padding="12dp"
-            android:textSize="18sp"/>
-    </LinearLayout>
-</ScrollView>
+    </RelativeLayout>
+
+    <!-- Nome do usuário -->
+    <TextView
+        android:id="@+id/title_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Usuário"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <!-- Número de repositórios -->
+    <TextView
+        android:id="@+id/txtReposCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repositórios públicos: 0"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Lista de repositórios -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRepos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"/>
+
+
+    <!-- Botão de voltar -->
+</LinearLayout>
 
 
     <!--
